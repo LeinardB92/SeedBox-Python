@@ -12,8 +12,9 @@ class ActuatorsSerializers(serializers.ModelSerializer):
         fields = '__all__'
 
 class CropsSerializers(serializers.ModelSerializer):
-    model = Crops
-    fields = '__all__'
+    class Meta:
+        model = Crops
+        fields = '__all__'
 
     
 
