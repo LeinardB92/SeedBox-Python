@@ -3,10 +3,11 @@ from django.db import models
 
 # Create your models here.
 class Sensors(models.Model):
+    """Datos que NO deben de ser llenados obligatoriamente por el usuario"""
     # Numeración automática para cadauno de 
     id = models.AutoField(primary_key=True)
     # Nombre compuesto según las carácteristicas físicas y ubicación del dispositivo.
-    idSensor = models.CharField(max_length=70, unique=False, editable=False)
+    idSensor = models.CharField(max_length=70, unique=True, editable=False)
     # Debe obtener un valor automático dependiendode del número de ejemplaresde un 
     # mismo tipo de sensor.
     sensorNumber = models.IntegerField(editable=False)  
@@ -18,6 +19,7 @@ class Sensors(models.Model):
     # Obtiene su valor de la fecha de instalación del dispositivo.
     installationDate = models.DateField(default=date.today)
     
+    """Datos que deben de ser llenados obligatoriamente por el usuario"""
     typeOfSensor = models.CharField(max_length=20)  
     location = models.CharField(max_length=20)
     #crops = models.OneToOneField(Crops,on_delete=models.CASCADE)

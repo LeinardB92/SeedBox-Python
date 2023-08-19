@@ -1,1 +1,31 @@
-.venv
+# Byte-compiled / optimized Python files
+__pycache__/
+*.py[cod]
+
+# Caché de Python
+*.pyc
+
+# Archivos temporales
+*~
+
+# Directorio virtualenv
+.venv/
+
+# Archivos de registro
+*.log
+
+# Base de datos SQLite
+*.db
+
+# Archivos estáticos y generados en tiempo de ejecución
+staticfiles/
+media/
+
+# Archivos de entorno (pueden contener claves secretas)
+.env
+
+# Archivo de configuración de desarrollo local
+local_settings.py
+
+# Archivos de copia de seguridad
+*.py.bak
