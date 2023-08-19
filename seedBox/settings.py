@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'seedBox.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'seedBoxdb',
+        'NAME': 'seedBoxDB',
         'USER': 'root',
         'PASSWORD': '12345'
     }
